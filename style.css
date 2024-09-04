@@ -12,7 +12,7 @@ body, html {
     background-image: url('background.jpeg');
     
     /* Scroll height */
-    height: 70%;
+    height: 100%;
 
     /* Parallax effect */
     background-attachment: fixed;
@@ -144,7 +144,7 @@ body, html {
 } */
 
 /* Mobile screen changes */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     .parallax {
         background-attachment: scroll;
     }
