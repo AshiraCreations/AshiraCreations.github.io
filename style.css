@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
+:root {
+    --bg-color: #011638;
+    --side-color: #00558A;
+    --widget-color: #5D8CC9;
+}
+
 body, html {
     /* Set height and margin for parallax */
     height:100%;
@@ -36,7 +42,7 @@ body, html {
 
 .main {
     /* Background texture */
-    background-color: #332B33;
+    background-color: var(--bg-color);
     box-shadow: 0 -4px 20px;
 
     /* Flex display for the main body */
@@ -48,7 +54,7 @@ body, html {
 
 .main-side {
     color: white;
-    background-color: #7EB0D3;
+    background-color: var(--side-color);
     padding: 1em;
     width: 30%;
     font-family: 'Roboto', sans-serif;
@@ -94,7 +100,8 @@ body, html {
 }
 
 .widget {
-    background-color: gray;
+    background-color: var(--widget-color);
+    color: black;
     box-shadow: 5px 5px 15px black;
     margin: 0.5em 1em;
     padding: 0.5em;
@@ -129,19 +136,18 @@ body, html {
     font-style: italic;
 }
 
-/* .fade-in-section {
+.fade-in-section {
     opacity: 0;
-    transform: translateY(20vh);
-    visibility: hidden;
-    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
-    will-change: opacity, visibility;
+    transition: opacity 1s ease;
 }
 
-.fade-in-section.is-visible {
+.fade-in {
     opacity: 1;
-    transform: none;
-    visibility: visible;
-} */
+}
+
+.fade-out {
+    opacity: 0;
+}
 
 /* Mobile screen changes */
 @media only screen and (max-width: 1000px) {
