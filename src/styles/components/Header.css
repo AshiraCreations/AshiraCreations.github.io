@@ -1,0 +1,53 @@
+.header {
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+    padding: 0 100px;
+
+    font-family: "Beiruti", sans-serif;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+
+    background-color: var(--blue-highlight);
+    box-shadow: 2px 2px 15px black;
+}
+
+.header__link {
+    margin: auto;
+    font-size: 24px;
+    font-weight: 700;
+
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s;
+}
+
+.header__link:hover {
+    font-size:26px;
+}
+
+.header__link:active {
+    color: white;
+}
+
+.header__seperator {
+    margin: auto 0;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        padding: 0 20px;
+    }
+    
+    .header__link {
+        font-size: 18px;
+    }
+
+    .header__link:hover {
+        font-size: 20px;
+    }
+}

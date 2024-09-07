@@ -1,0 +1,19 @@
+.banner {
+    /* Scroll height */
+    min-height: 600px;
+    height: 100%;
+
+    /* Parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner__overlay {
+    position: absolute;
+    right: 0;
+    margin: 10%;
+    text-shadow: 2px 2px 10px black;
+}

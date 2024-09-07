@@ -1,0 +1,40 @@
+:root {
+    --blue-dark: #011638;
+    --main: #00558A;
+    --blue-highlight: #5D8CC9;
+    --white-off: #F9E0D9;
+    --white-shadow: #E6DBD0;
+    --light: #A8F9FF;
+    --light-shadow: #9AE5E6;
+}
+
+body, html {
+    /* Set height and margin for parallax */
+    height:100%;
+    margin: 0;
+}
+
+main {
+    background-color: var(--blue-highlight);
+    font-family: 'Beiruti', sans-serif;
+    color: white;
+}
+
+.sideline {
+    border-left: 6px solid var(--blue-highlight);
+    padding-left: 10px;
+}
+
+.sideline__item p {
+    margin: 0;
+}
+
+.sideline__item span {
+    font-weight: 300;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.sideline__item h4 {
+    margin: 10px 0;
+}

@@ -1,0 +1,11 @@
+.acting{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.acting__item {
+    margin: 10px;
+    padding: 10px;
+    flex: 0 1 auto;
+}
